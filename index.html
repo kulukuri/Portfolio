@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kulukuri Venkata Sai Harshita | Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Segoe UI, sans-serif;
+background:#f7f6fc;
+color:#2d2d2d;
+}
+
+/* New Theme Colors */
+:root{
+--primary:#1E3A8A;
+--primary-dark:#1E40AF;
+--light:#ffffff;
+--soft:#EFF6FF;
+--text:#1F2937;
+}
+
+/* Navbar */
+.navbar{
+background:#ffffff;
+box-shadow:0 4px 18px rgba(0,0,0,0.06);
+}
+
+.navbar-brand{
+font-weight:700;
+color:var(--primary) !important;
+font-size:28px;
+}
+
+.nav-link{
+font-weight:500;
+margin-left:10px;
+color:#444 !important;
+}
+
+.nav-link:hover{
+color:var(--primary) !important;
+}
+
+/* Hero */
+.hero{
+padding:110px 0;
+background:linear-gradient(135deg,#f7f6fc,#ffffff);
+}
+
+.hero h1{
+font-size:52px;
+font-weight:800;
+line-height:1.2;
+color:var(--primary);
+}
+
+.hero p{
+font-size:20px;
+color:#555;
+max-width:700px;
+margin:auto;
+}
+
+/* Buttons */
+.btn-main{
+background:var(--primary);
+color:#fff;
+padding:12px 28px;
+border:none;
+border-radius:10px;
+font-weight:600;
+}
+
+.btn-main:hover{
+background:var(--primary-dark);
+color:#fff;
+}
+
+.btn-outline-custom{
+border:2px solid var(--primary);
+color:var(--primary);
+padding:12px 28px;
+border-radius:10px;
+font-weight:600;
+}
+
+.btn-outline-custom:hover{
+background:var(--primary);
+color:#fff;
+}
+
+/* Sections */
+.section{
+padding:80px 0;
+}
+
+.section-title{
+font-size:36px;
+font-weight:700;
+color:var(--primary);
+text-align:center;
+margin-bottom:50px;
+}
+
+/* Cards */
+.card-custom{
+background:#fff;
+border:none;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,0.06);
+transition:0.3s;
+height:100%;
+}
+
+.card-custom:hover{
+transform:translateY(-8px);
+}
+
+/* Skills */
+.skill-badge{
+background:var(--primary);
+color:#fff;
+padding:10px 16px;
+border-radius:25px;
+margin:6px;
+display:inline-block;
+font-size:14px;
+}
+
+/* Timeline */
+.timeline{
+border-left:4px solid var(--primary);
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:25px;
+}
+
+.timeline-item h5{
+margin-bottom:5px;
+color:var(--primary);
+}
+
+/* Counter */
+.counter{
+font-size:42px;
+font-weight:800;
+color:var(--primary);
+}
+
+/* Footer */
+footer{
+background:var(--primary);
+color:#fff;
+padding:30px 0;
+}
+
+a{
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:38px;
+}
+.hero p{
+font-size:18px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+<div class="container">
+<a class="navbar-brand" href="#">Harshita</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero text-center">
+<div class="container">
+
+<h1>
+Kulukuri Venkata<br>
+Sai Harshita
+</h1>
+
+<p class="mt-4 mb-4">
+AI/ML Engineering Student translating academic excellence into real-world impact. Passionate about building intelligent systems and solving complex problems.
+</p>
+
+<a href="#" class="btn btn-main me-2">Download Resume</a>
+<a href="#contact" class="btn btn-outline-custom">Contact Me</a>
+
+</div>
+</section>
+
+<!-- Stats -->
+<section class="section bg-white">
+<div class="container">
+<div class="row text-center">
+
+<div class="col-md-4">
+<div class="counter" id="count1">0</div>
+<p>Projects Completed</p>
+</div>
+
+<div class="col-md-4">
+<div class="counter" id="count2">0</div>
+<p>Achievements</p>
+</div>
+
+<div class="col-md-4">
+<div class="counter" id="count3">0</div>
+<p>CGPA</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+
+<div class="row align-items-center">
+<div class="col-md-6">
+<p style="font-size:18px;line-height:1.8;">
+Motivated AIML student looking for entry-level opportunities to use technical skills, solve real-world problems, and grow in a professional environment. Strong academic performer with hands-on experience in AI, web technologies, and smart systems.
+</p>
+</div>
+
+<div class="col-md-6">
+<div class="card card-custom p-4">
+<h5>Quick Info</h5>
+<p>Vizianagaram, Andhra Pradesh</p>
+<p>+91 9492446572</p>
+<p>harshitakulukuri@gmail.com</p>
+<p>B.Tech AIML Student</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Skills -->
+<section class="section bg-white" id="skills">
+<div class="container">
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="text-center">
+<span class="skill-badge">Python</span>
+<span class="skill-badge">Java</span>
+<span class="skill-badge">C</span>
+<span class="skill-badge">HTML</span>
+<span class="skill-badge">CSS</span>
+<span class="skill-badge">Bootstrap</span>
+<span class="skill-badge">JavaScript</span>
+<span class="skill-badge">Machine Learning</span>
+<span class="skill-badge">MySQL</span>
+<span class="skill-badge">MongoDB</span>
+<span class="skill-badge">Git</span>
+<span class="skill-badge">GitHub</span>
+</div>
+
+</div>
+</section>
+
+<!-- Projects -->
+<section class="section" id="projects">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card card-custom p-4">
+<h5>AI Whiteboard</h5>
+<p>Gesture controlled digital whiteboard enabling touch-free writing, erasing, and saving using Python, OpenCV, and MediaPipe.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom p-4">
+<h5>InstantClean Talk</h5>
+<p>AI Toxic Comment Detector using Machine Learning with Python, PHP, MySQL, and XAMPP.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom p-4">
+<h5>Gas Guardian</h5>
+<p>Smart safety system detecting gas leaks and alerting users through alarms and SMS.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Education -->
+<section class="section bg-white" id="education">
+<div class="container">
+<h2 class="section-title">Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h5>B.Tech CSE (AI & ML)</h5>
+<p>Lendi Institute of Engineering and Technology | 2023 - 2027 | CGPA: 9.50</p>
+</div>
+
+<div class="timeline-item">
+<h5>Intermediate (MPC)</h5>
+<p>Narayana Junior College | 2021 - 2023 | 96.8%</p>
+</div>
+
+<div class="timeline-item">
+<h5>SSC</h5>
+<p>Narayana School | 2020 - 2021 | 99.5%</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Achievements -->
+<section class="section" id="achievements">
+<div class="container">
+<h2 class="section-title">Achievements</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card card-custom p-4">
+First Prize - RaithuSetu App (LIET 2026)
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom p-4">
+First Prize - Genesis Innovative Idea (2025)
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom p-4">
+Second Prize - Project Expo LIET (2025)
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Contact -->
+<section class="section bg-white" id="contact">
+<div class="container">
+<h2 class="section-title">Contact Me</h2>
+
+<div class="text-center">
+<p style="font-size:18px;">harshitakulukuri@gmail.com</p>
+<p style="font-size:18px;">+91 9492446572</p>
+
+<a href="https://github.com/kulukuri" class="btn btn-main m-2">GitHub</a>
+<a href="https://linkedin.com/in/harshita-kulukuri-1aba48325" class="btn btn-outline-custom m-2">LinkedIn</a>
+</div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+<div class="container">
+<p class="mb-0">© 2026 Kulukuri Venkata Sai Harshita | Portfolio</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script>
+function counter(id,target,speed){
+let count = 0;
+
+let x = setInterval(function(){
+
+count += 0.05;
+
+if(count >= target){
+count = target;
+clearInterval(x);
+}
+
+document.getElementById(id).innerText = count.toFixed(2);
+
+},speed);
+}
+
+function intCounter(id,target,speed){
+let count = 0;
+
+let x = setInterval(function(){
+
+count++;
+
+document.getElementById(id).innerText = count;
+
+if(count >= target){
+clearInterval(x);
+}
+
+},speed);
+}
+
+intCounter("count1",3,150);
+intCounter("count2",3,150);
+counter("count3",9.50,30);
+</script>
+
+</body>
+</html>
